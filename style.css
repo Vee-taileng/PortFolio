@@ -1,0 +1,106 @@
+:root {
+    --pink-color: #e9c7be;
+    --black-color: #23211f;
+    --purple-color: #565681;
+    --orange-color: #ea5b3d;
+    --grey-text: #746d6d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    padding: 25px;
+    color: #ffffff;
+    background-color: var(--orange-color);
+    text-align: center;
+}
+
+nav h1 {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.container {
+    max-width: 1120px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.8fr 2fr;
+    align-items: center;
+    padding: 24px;
+}
+
+.display-img img {
+    width: 300px;
+    height: 300px;
+}
+
+span.color {
+    background-color: #23211f;
+    width: 50px;
+    height: 40px;
+    margin: 10px 3px 0px;
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+span.orange {
+    background-color: var(--orange-color);
+}
+
+span.purple {
+    background-color: var(--purple-color);
+}
+
+span.pink {
+    background-color: var(--pink-color);
+}
+
+.detail p {
+    margin: 20px 0px;
+    color: var(--grey-text);
+    font-size: 16px;
+}
+
+.btn-wrap {
+    margin-top: 15px;
+}
+
+.btn {
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.buy-now {
+    background-color: var(--orange-color);
+    color: #ffffff;
+}
+
+@media screen and (max-width: 610px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .display-img img {
+        width: 100%;
+        height: auto;
+    }
+}
